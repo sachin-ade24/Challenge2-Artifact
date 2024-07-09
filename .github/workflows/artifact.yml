@@ -18,7 +18,7 @@ jobs:
               node-version: 18
 
          - name: Execute the file
-           run: ./${{env.FILE_NAME}}.js
+           run: go build  ${{env.FILE_NAME}}.js
 
          - name: Upload artifact
            uses: actions/upload-artifact@v1.0.0
