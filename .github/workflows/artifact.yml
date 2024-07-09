@@ -12,6 +12,11 @@ jobs:
          - name: Actions Checkout
            uses: actions/checkout@v1
 
+         - name: Setup Node
+           uses: actions/setup-node@v4
+           with:
+              node-version: 18
+
          - name: Execute the file
            run: ${{env.FILE_NAME}}.js
 
